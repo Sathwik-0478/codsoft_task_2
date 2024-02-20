@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathwik's Resume Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc; /* somewhat bright background */
+            color: #333; /* dark text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f0e68c; /* senf background color */
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 30px 0;
+            background-color: #ffdd57; /* bright yellow */
+            border-radius: 8px;
+        }
+
+        header img {
+            width: 200px; /* Increased width for Sathwik's image */
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-top: 20px;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+            color: #333; /* dark text color */
+        }
+
+        section {
+            margin-bottom: 30px;
+            background-color: #f0e68c; /* senf background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            margin-bottom: 20px;
+        }
+
+        .skill {
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            margin-bottom: 5px;
+        }
+
+        .skill-bar {
+            height: 10px;
+            background-color: #cccc00; /* bright yellow */
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skill-bar-fill {
+            height: 100%;
+            background-color: #ffcc00; /* senf */
+            transition: width 1s;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffdd57; /* bright yellow */
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info a {
+            color: #333; /* dark text color */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        .contact-info a:hover {
+            color: #5e30d4;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .project {
+            width: calc(50% - 10px);
+            margin-bottom: 20px;
+            background-color: #ffd700; /* gold */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin: 0 auto; /* Center the project box */
+            transition: transform 0.3s, z-index 0s; /* Add transition */
+            position: relative; /* Add relative position */
+        }
+
+        .project:hover {
+            transform: scale(1.05); /* Scale up on hover */
+            z-index: 1; /* Bring to front */
+        }
+
+        .project img {
+            width: 70%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+
+        .project h3 {
+            margin-bottom: 10px;
+            color: #333; /* dark text color */
+        }
+
+        .project p {
+            color: #666; /* medium dark text color */
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 14px;
+            background-color: #ffdd57; /* bright yellow */
+            color: #333; /* dark text color */
+            border-radius: 0 0 8px 8px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="pic.jpeg" alt="Sathwik's Photo">
+            <h1>Sathwik</h1>
+            <h2>B.Tech in Computer Science Engineering</h2>
+        </header>
+        <section>
+            <h2>About Me</h2>
+            <p>I am Sathwik, a dedicated and enthusiastic B.Tech graduate in Computer Science Engineering with a passion for technology and programming. I thrive in challenging environments and enjoy solving complex problems.</p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <p>B.Tech in Computer Science Engineering - University Name, Year</p>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <div class="skill-name">Java</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">HTML/CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Database Management</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="project">
+                <img src="https://th.bing.com/th/id/OIP.RKwWiaG6O3p-0maLd585wQHaJu?rs=1&pid=ImgDetMain" alt="Compiler Construction">
+                <h3>Compiler Construction</h3>
+                <p>Developed a compiler for a custom programming language from scratch using Java. Implemented lexical analysis, parsing, semantic analysis, and code generation phases.</p>
+            </div>
+            <div class="project">
+                <img src="https://th.bing.com/th/id/OIP.WaCOgSUgMm-RNN1PhMBPWgHaEK?rs=1&pid=ImgDetMain" alt="Java Programming">
+                <h3>Java Programming</h3>
+                <p>Created various applications and projects using Java, including GUI applications, data structures, and algorithms implementations.</p>
+            </div>
+        </section>
+        <section class="contact-info">
+            <a href="mailto:sathwik@example.com"><i class="far fa-envelope"></i></a>
+            <a href="tel:+1234567890"><i class="fas fa-phone"></i></a>
+            <a href="https://linkedin.com/sathwik"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sathwik"><i class="fab fa-github"></i></a>
+        </section>
+        <footer>
+            <p>&copy; 2024 Sathwik's Resume Portfolio | Designed by OpenAI Assistant</p>
+        </footer>
+    </div>
+</body>
+</html>
